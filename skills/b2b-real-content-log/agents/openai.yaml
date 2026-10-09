@@ -1,0 +1,4 @@
+interface:
+  display_name: "B2B 真实实践记录"
+  short_description: "AI 主动完成研究、比较与整理，让用户掌握关键取舍，并保留证据和待验证项。"
+  default_prompt: "使用 $b2b-real-content-log，从已有资料出发主动完成研究和准备，给出推荐与依据，只向我询问个人条件和关键取舍。"

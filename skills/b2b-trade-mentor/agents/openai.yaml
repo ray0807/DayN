@@ -1,0 +1,4 @@
+interface:
+  display_name: "B2B 外贸实践导师"
+  short_description: "由 AI 主动研究、查证和比较外贸方案，让用户掌握关键选择并记录真实进展"
+  default_prompt: "使用 $b2b-trade-mentor，主动研究并提出有依据的外贸方案，只向我询问个人条件和关键取舍，把最终选择留给我。"

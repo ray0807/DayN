@@ -1,0 +1,4 @@
+interface:
+  display_name: "外贸起步访谈与答疑"
+  short_description: "通过少量提问了解每个人的实际条件，再提供有依据的分析、答疑和行动建议"
+  default_prompt: "使用 $trade-startup-interview，先通过提问了解我的实际情况，再根据回答分析和答疑，不预设我的能力、资源或业务方向。"
