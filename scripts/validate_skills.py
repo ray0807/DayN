@@ -18,7 +18,7 @@ def scalar(value):
 
 def main():
     errors = []
-    skill_files = sorted((ROOT/'skills').glob('*/SKILL.md'))
+    skill_files = sorted(list((ROOT/'skills').glob('*/SKILL.md')) + list((ROOT/'days').glob('*/*/SKILL.md')))
     if not skill_files:
         errors.append('No skills found')
     for path in skill_files:
@@ -61,7 +61,7 @@ def main():
         except (ValueError,KeyError,IndexError,OSError) as exc:
             errors.append(f'{path.relative_to(ROOT)}: {exc}')
 
-    markdown = list((ROOT/'days').glob('*/TASK.md')) + list((ROOT/'docs').glob('*.md')) + list((ROOT/'skills').rglob('*.md')) + [ROOT/'README.md']
+    markdown = list((ROOT/'days').rglob('*.md')) + list((ROOT/'docs').rglob('*.md')) + list((ROOT/'skills').rglob('*.md')) + [ROOT/'README.md']
     for path in markdown:
         text=path.read_text(encoding='utf-8')
         for target in re.findall(r'\[[^\]]+\]\(([^)]+)\)',text):
@@ -70,9 +70,9 @@ def main():
             if not (path.parent/target.split('#',1)[0]).exists():
                 errors.append(f'{path.relative_to(ROOT)}: missing link {target}')
     day_paths=sorted((ROOT/'days').glob('Day*/TASK.md'))
-    numbers=[int(re.match(r'Day(\d+)-',p.parent.name).group(1)) for p in day_paths]
-    if numbers!=list(range(1,31)):
-        errors.append('Expected exactly Day01 through Day30')
+    numbers=[int(re.match(r'Day(\d+)-',p.parent.name).group(1)) for p in day_paths if re.match(r'Day(\d+)-',p.parent.name)]
+    if numbers!=[1,2] or len(day_paths)!=3 or not (ROOT/'days'/'DayN-持续实践'/'TASK.md').exists():
+        errors.append('Expected Day01, Day02 and an open-ended DayN practice task')
     for path in day_paths:
         text=path.read_text(encoding='utf-8')
         for section in ['## AI 主动完成','## 用户负责决定','## 今天的产出','## 启动提示词']:

@@ -1,0 +1,4 @@
+interface:
+  display_name: "DayN：AI持续实践与问题解决"
+  short_description: "依据真实业务结果主动调研解决问题，结合AI与自动化持续执行验证"
+  default_prompt: "使用 $dayn-practice-loop，根据已有记录询问关键条件，由你主动联网研究、比较和推荐，让我做关键选择，再推进当前工作。"
