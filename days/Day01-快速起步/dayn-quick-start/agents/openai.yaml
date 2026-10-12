@@ -1,4 +1,4 @@
 interface:
-  display_name: "Day1：商品外贸起步调研"
-  short_description: "先询问新手真实情况，再主动调研商品供应买家与市场，给出起步建议"
-  default_prompt: "使用 $dayn-quick-start，先问清我做商品外贸的真实条件，再主动联网研究、分析并告诉我如何起步，给出依据后让我做关键选择。"
+  display_name: "Day1：选品与外贸深度调研"
+  short_description: "从十余个产品逐轮筛到一个，再深入研究全球市场竞争与进入策略并交付报告"
+  default_prompt: "使用 $dayn-quick-start，弹窗了解条件，研究至少10个候选并逐轮筛到一个产品，确认后继续详细外贸深度调研并交付报告；Day1不开发供应商。"
