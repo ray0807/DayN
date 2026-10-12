@@ -1,42 +1,21 @@
 # Day N skill 路由
 
-按当前业务问题选择一个主要 skill；只有明确需要时再读另一项。这里是同一助手加载相关指导，不是自动生成多个代理。
+准备按1–2天安排，之后持续实施。按当前问题读取必要模块，不按旧30天任务逐项执行。同一助手执行，不自动委派代理。
 
-先在可用技能目录中查找名称，或在当前技能集合的同级目录读取对应 SKILL.md。缺少模块时保持已知协作原则继续能做的部分，并说明缺失，不宣称已经调用。
+| 工作 | skill |
+|---|---|
+| Day 1投入、能力与资源 | b2b-startup-planner |
+| Day 1行业、产品与客户初筛 | b2b-direction-research、b2b-product-market-research |
+| Day 2首轮需求、市场与同行研究 | b2b-product-market-research |
+| Day 2流程及关键准入限制 | b2b-trade-readiness |
+| 供应询问、比较与样品 | b2b-supplier-research |
+| 成本与报价 | b2b-cost-quotation |
+| 产品资料、展示和流程演练 | b2b-product-assets |
+| 客户研究、联系、需求和持续跟进 | b2b-customer-development |
+| 够用的工具与重复工作自动化 | b2b-lean-automation |
+| 定期投入和阶段效果复盘 | b2b-progress-review |
+| 真实过程与视频记录 | b2b-real-content-log |
 
-| Day | 当前工作 | 主要 skill |
-|---|---|---|
-| 1 | 起步投入 | `b2b-startup-planner` |
-| 2 | 能力与资源 | `b2b-startup-planner` |
-| 3 | 候选行业 | `b2b-direction-research` |
-| 4 | 行业比较 | `b2b-direction-research` |
-| 5 | 企业客户类型 | `b2b-product-market-research` |
-| 6 | 具体产品 | `b2b-direction-research` |
-| 7 | 供应条件验证 | `b2b-supplier-research` |
-| 8 | 初步方向选择 | `b2b-direction-research` |
-| 9 | 产品知识 | `b2b-product-market-research` |
-| 10 | 采购需求 | `b2b-product-market-research` |
-| 11 | 目标市场 | `b2b-product-market-research` |
-| 12 | 同行观察 | `b2b-product-market-research` |
-| 13 | 业务流程 | `b2b-trade-readiness` |
-| 14 | 准入与准备 | `b2b-trade-readiness` |
-| 15 | 供应商比较 | `b2b-supplier-research` |
-| 16 | 样品检查 | `b2b-supplier-research` |
-| 17 | 成本结构 | `b2b-cost-quotation` |
-| 18 | 基础工具 | `b2b-lean-automation` |
-| 19 | 产品资料 | `b2b-product-assets` |
-| 20 | 最小展示页面 | `b2b-product-assets` |
-| 21 | 模拟询盘 | `b2b-product-assets` |
-| 22 | 客户渠道 | `b2b-customer-development` |
-| 23 | 客户筛选 | `b2b-customer-development` |
-| 24 | 客户档案 | `b2b-customer-development` |
-| 25 | 首次联系 | `b2b-customer-development` |
-| 26 | 需求与回复 | `b2b-customer-development` |
-| 27 | 持续跟进 | `b2b-customer-development` |
-| 28 | 轻量自动化 | `b2b-lean-automation` |
-| 29 | 实际投入复盘 | `b2b-progress-review` |
-| 30 | 阶段复盘 | `b2b-progress-review` |
+在可用技能目录查找，或读取当前集合的同级SKILL.md。缺少模块说明限制并继续可做的工作，不宣称已调用。衔接保留已确认条件、依据、待验证项和实际结果，建议与用户决定分开，已有授权与选择继续有效。
 
-视频整理使用 `b2b-real-content-log`；具体成本与报价使用 `b2b-cost-quotation`；新业务阶段按工作性质选择，而非机械按 Day 路由。
-
-衔接只传必要的已确认条件、证据与未决问题。不同模块提出的建议均不等于用户决定，已有授权和选择继续有效。
+每轮按行动、问题或反馈、解决办法、验证和下一步推进；没有固定结束日。

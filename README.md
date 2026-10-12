@@ -1,6 +1,6 @@
 # Day N：从零开始做 B2B 外贸
 
-一套可复用的 AI 外贸实践 skills，以及按 Day 1—30 分类的行动大纲。
+一套可复用的 AI 外贸实践 skills：准备按1–2天安排，随后利用AI、自动化和已有能力持续开展真实业务，遇到问题解决问题，没有固定终点。
 
 **需要调研的由 AI 主动完成，需要决策的交给用户。**
 
@@ -14,14 +14,14 @@ AI 查资料、比较方案、提出推荐并整理材料；用户提供真实�
 
 > 请读取 skills/trade-startup-interview/SKILL.md，通过提问了解我的实际情况，再根据回答分析和回答我的问题。每轮最多三个问题，已说过的不要重问，没说过的不要假设。我不知道的专业知识由你解释或调查，关键取舍由我决定。信息足够时整理起步表，未知项保留待确认。
 
-确认要探索B2B后，打开 [Day 1：起步投入](days/Day01-起步投入/TASK.md)，使用该文件里的启动提示词。
+确认要探索B2B后，读取 [Day 1 Agent技能](days/Day01-快速起步/dayn-quick-start/SKILL.md)：询问真实条件后，AI主动联网调研、比较并推荐，用户只做关键选择。其他Day的技能入口见 [实践路线](docs/dayn-roadmap.md)。各Day技能保存在对应目录，可直接要求Agent读取；现有安装脚本只安装skills目录内的专项模块，未自动安装这些Day技能。
 
-完整顺序见 [Day 1—Day N 大纲](docs/dayn-roadmap.md)。Day 是记录编号，不强制一天一集，也不强制在某个日期成交。尚未完成的调查可以继续，已完成的准备可以跳过。
+完整顺序见 [Day 1—Day N 大纲](docs/dayn-roadmap.md)。Day 1起步与方向初筛，Day 2准备够用的资料并开始实施，Day 3起持续实践。准备只占1–2天，外部等待与后续学习随业务跟进，不强制每天一集，没有固定结束日期。
 
 ## 目录
 
 ```text
-days/       每个 Day 的目标、AI工作、用户选择、产出与提示词
+days/       每个Day的可执行Agent技能，以及任务概览
 skills/     可复用的专项 skills 与总导师
 docs/       完整路线和决策记录模板
 scripts/    安装与格式检查
@@ -33,19 +33,19 @@ scripts/    安装与格式检查
 |---|---|---|
 | 通用访谈 | [trade-startup-interview](skills/trade-startup-interview/SKILL.md) | 收集个人条件、分析与答疑，不预设方向 |
 | 总体辅导 | [b2b-trade-mentor](skills/b2b-trade-mentor/SKILL.md) | 确定B2B后的系列，保持条件与选择连续 |
-| 起步条件 | [b2b-startup-planner](skills/b2b-startup-planner/SKILL.md) | Day 1—2 |
-| 方向选择 | [b2b-direction-research](skills/b2b-direction-research/SKILL.md) | Day 3—4、6、8 |
-| 产品与市场 | [b2b-product-market-research](skills/b2b-product-market-research/SKILL.md) | Day 5、9—12 |
-| 流程与准入 | [b2b-trade-readiness](skills/b2b-trade-readiness/SKILL.md) | Day 13—14，后续交易准备 |
-| 供应与样品 | [b2b-supplier-research](skills/b2b-supplier-research/SKILL.md) | Day 7、15—16 |
-| 成本与报价 | [b2b-cost-quotation](skills/b2b-cost-quotation/SKILL.md) | Day 17，具体报价需求出现时 |
-| 产品展示 | [b2b-product-assets](skills/b2b-product-assets/SKILL.md) | Day 19—21 |
-| 客户积累 | [b2b-customer-development](skills/b2b-customer-development/SKILL.md) | Day 22—27 |
-| 工具与自动化 | [b2b-lean-automation](skills/b2b-lean-automation/SKILL.md) | Day 18、28 |
-| 阶段复盘 | [b2b-progress-review](skills/b2b-progress-review/SKILL.md) | Day 29—30及后续复盘 |
+| 起步条件 | [b2b-startup-planner](skills/b2b-startup-planner/SKILL.md) | Day 1及后续投入调整 |
+| 方向选择 | [b2b-direction-research](skills/b2b-direction-research/SKILL.md) | Day 1及后续方向调整 |
+| 产品与市场 | [b2b-product-market-research](skills/b2b-product-market-research/SKILL.md) | Day 1—2及实际需求出现时 |
+| 流程与准入 | [b2b-trade-readiness](skills/b2b-trade-readiness/SKILL.md) | Day 2及具体交易准备 |
+| 供应与样品 | [b2b-supplier-research](skills/b2b-supplier-research/SKILL.md) | 供应与样品需要时 |
+| 成本与报价 | [b2b-cost-quotation](skills/b2b-cost-quotation/SKILL.md) | 具体报价需求出现时 |
+| 产品展示 | [b2b-product-assets](skills/b2b-product-assets/SKILL.md) | Day 2及后续资料更新 |
+| 客户积累 | [b2b-customer-development](skills/b2b-customer-development/SKILL.md) | 首轮实施及持续客户开发 |
+| 工具与自动化 | [b2b-lean-automation](skills/b2b-lean-automation/SKILL.md) | 启动工具及随时加入的自动化 |
+| 阶段复盘 | [b2b-progress-review](skills/b2b-progress-review/SKILL.md) | 持续实践中的定期复盘 |
 | 真实内容 | [b2b-real-content-log](skills/b2b-real-content-log/SKILL.md) | 每期实际工作完成后，按需使用 |
 
-一个 Day 可以调用多个相关 skill，同一个 skill 可以服务多个 Day。不复制三十份相同规则，不为了增加数量而拆技能。
+一个 Day 可以调用多个相关 skill，同一个 skill 可以服务多个 Day。准备事项合并推进，不为了增加天数拆任务。原30项保留为按需参考。
 
 ## 安装前先看这里
 
@@ -100,9 +100,9 @@ Day 1 启动示例：
 
 ```text
 使用 $b2b-startup-planner，帮我完成 Day 1 起步盘点。
-先读取 days/Day01-起步投入/TASK.md 和会话已有信息。
+先读取 days/Day01-快速起步/TASK.md 和会话已有信息。
 AI 主动整理时间、预算、能力和资源，只向我询问真实个人条件与关键取舍。
-未知项保留待确认，不急着选行业，不加入盈利目标。
+同一次工作完成行业、产品与企业客户初筛，推荐暂定组合；未知项保留待验证，不加入盈利目标。
 ```
 
 ### 在多个项目中使用
@@ -142,7 +142,7 @@ Windows 在本项目目录运行：
 
 ```text
 用 b2b-startup-planner 技能帮我完成 Day 1。
-读取 days/Day01-起步投入/TASK.md，根据已有信息主动整理，
+读取 days/Day01-快速起步/TASK.md，根据已有信息主动整理，
 只问我个人条件和关键取舍，最终生成起步盘点表。
 ```
 
@@ -215,7 +215,7 @@ agents/
 
 ### 没有技能入口：通过文件指导当前对话
 
-上传 `skills/b2b-startup-planner/SKILL.md` 和 `days/Day01-起步投入/TASK.md`，要求助手先读取再执行。这是当前会话使用文件指导，不等同于持久安装。不能上传 Markdown 时，将这两个文件的内容粘贴到对话。
+上传 `skills/b2b-startup-planner/SKILL.md` 和 `days/Day01-快速起步/TASK.md`，要求助手先读取再执行。这是当前会话使用文件指导，不等同于持久安装。不能上传 Markdown 时，将这两个文件的内容粘贴到对话。
 
 普通附件模式不会自动赋予联网、文件写入或外部应用权限；缺少能力时应明确哪些内容还未验证。
 
@@ -225,7 +225,7 @@ agents/
 
 ```text
 先读取 skills/b2b-startup-planner/SKILL.md，
-再读取 days/Day01-起步投入/TASK.md，按它们推进当前任务。
+再读取 days/Day01-快速起步/TASK.md，按它们推进当前任务。
 需要调研的由你主动完成，需要关键取舍的由我决定。
 只问我你无法自行获得的个人信息；给出推荐、依据和未知项。
 不能联网时说明当前未核实，不虚构事实。
