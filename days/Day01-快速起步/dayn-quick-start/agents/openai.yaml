@@ -1,4 +1,4 @@
 interface:
-  display_name: "Day1：AI调研与方向选择"
-  short_description: "询问真实条件后主动联网调研行业产品与客户组合，推荐方案让用户选择"
-  default_prompt: "使用 $dayn-quick-start，根据已有记录询问关键条件，由你主动联网研究、比较和推荐，让我做关键选择，再推进当前工作。"
+  display_name: "Day1：商品外贸起步调研"
+  short_description: "先询问新手真实情况，再主动调研商品供应买家与市场，给出起步建议"
+  default_prompt: "使用 $dayn-quick-start，先问清我做商品外贸的真实条件，再主动联网研究、分析并告诉我如何起步，给出依据后让我做关键选择。"
