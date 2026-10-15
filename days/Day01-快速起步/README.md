@@ -61,3 +61,41 @@
 筛到一个产品是中间节点，确认后AI主动继续研究：产品定义和规格、全球贸易与需求、目标市场比较、企业买家和采购流程、竞争及差异化、产业与生产特征、成本报价及资金情景、物流交付、产品与目标市场合规、市场进入策略、风险与后续验证。
 
 最终交付完整报告、数据来源、比较与测算表，以及结合当前用户条件的推荐和成立前提。未知数据不编造，行业大类统计不冒充细分市场，公开线索不冒充真实需求。供应商联系仍属后续阶段。报告默认在聊天中交付，只有用户要求保存时才写文件。
+
+## 给 AI Agent 的安装说明
+
+当用户要求安装 Day1 技能时：
+
+1. 获取完整技能文件夹 `days/Day01-快速起步/dayn-quick-start`（本地仓库，或克隆 `https://github.com/ray0807/DayN`）。必须保留 `SKILL.md` 和 `agents/openai.yaml`。
+2. 确定技能目录：Codex 使用 `$CODEX_HOME/skills`，未设置时使用 `~/.codex/skills`；新版 Codex 也识别项目 `.agents/skills/` 或个人 `~/.agents/skills/`。目标应为 `<技能目录>/dayn-quick-start/SKILL.md`，不要多套一层目录。
+3. 同名技能已存在时，先比较内容并按用户要求决定是否覆盖，不静默替换本机修改。
+4. 复制后确认两个文件都存在，回复安装路径和调用示例 `$dayn-quick-start`。当前会话没有识别新技能时，请用户开新会话再调用。
+5. 安装时不启动访谈或业务研究。
+
+Windows PowerShell（在仓库根目录运行）：
+
+~~~powershell
+$source = (Resolve-Path -LiteralPath 'days/Day01-快速起步/dayn-quick-start').Path
+$skillRoot = if ($env:CODEX_HOME) { Join-Path $env:CODEX_HOME 'skills' } else { Join-Path $env:USERPROFILE '.codex/skills' }
+$target = Join-Path $skillRoot 'dayn-quick-start'
+if (Test-Path -LiteralPath $target) { throw '技能已存在，请先检查再更新。' }
+New-Item -ItemType Directory -Path $skillRoot -Force | Out-Null
+Copy-Item -LiteralPath $source -Destination $target -Recurse
+Get-Item -LiteralPath (Join-Path $target 'SKILL.md'), (Join-Path $target 'agents/openai.yaml')
+~~~
+
+macOS / Linux（在仓库根目录运行）：
+
+~~~bash
+source_dir='days/Day01-快速起步/dayn-quick-start'
+skill_root="${CODEX_HOME:-$HOME/.codex}/skills"
+target="$skill_root/dayn-quick-start"
+if [ -e "$target" ]; then
+  echo '技能已存在，请先检查再更新。'
+else
+  mkdir -p "$skill_root" && cp -R "$source_dir" "$target" &&
+    test -f "$target/SKILL.md" && test -f "$target/agents/openai.yaml" && echo '安装完成'
+fi
+~~~
+
+更新已安装的版本时，先确认本机没有需要保留的修改，再删除旧目录后重新复制。不支持加载技能的工具，可以直接要求 Agent 读取本目录的 `dayn-quick-start/SKILL.md`，这只是本次对话使用，不等于安装。
