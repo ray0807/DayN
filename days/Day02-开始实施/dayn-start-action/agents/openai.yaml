@@ -1,4 +1,4 @@
 interface:
   display_name: "Day2：销售方案与实践启动包"
-  short_description: "根据Day1的产品定好价格、客户、渠道、话术与收款，交付第三天可直接开始的实践启动包"
-  default_prompt: "使用 $dayn-start-action，读取Day1的选品结果，由你主动研究并制定销售方案，只让我做关键选择，最后交付实践启动包。"
+  short_description: "基于选品结果准备报价、客户渠道和必备独立站首版，交付分清前提与验证项的实践启动包"
+  default_prompt: "使用 $dayn-start-action，读取Day1结果，主动研究销售方案并准备必备独立站首版，只让我作关键选择，先交付一页行动摘要，再附实践启动包。"
