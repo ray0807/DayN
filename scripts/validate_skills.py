@@ -71,8 +71,8 @@ def main():
                 errors.append(f'{path.relative_to(ROOT)}: missing link {target}')
     day_paths=sorted((ROOT/'days').glob('Day*/TASK.md'))
     numbers=[int(re.match(r'Day(\d+)-',p.parent.name).group(1)) for p in day_paths if re.match(r'Day(\d+)-',p.parent.name)]
-    if numbers!=[1,2] or len(day_paths)!=3 or not (ROOT/'days'/'DayN-持续实践'/'TASK.md').exists():
-        errors.append('Expected Day01, Day02 and an open-ended DayN practice task')
+    if numbers!=[1,2,3] or len(day_paths)!=4 or not (ROOT/'days'/'DayN-持续实践'/'TASK.md').exists():
+        errors.append('Expected Day01, Day02, Day03 and an open-ended DayN practice task')
     for path in day_paths:
         text=path.read_text(encoding='utf-8')
         for section in ['## AI 主动完成','## 用户负责决定','## 今天的产出','## 启动提示词']:

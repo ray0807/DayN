@@ -1,0 +1,4 @@
+interface:
+  display_name: "Day3：产品研究与供应落地"
+  short_description: "研究产品并落实询价与图片，同时推进社媒、企业收款、邮箱和独立站的实际实施"
+  default_prompt: "使用 $dayn-product-launch，接续Day2，研究产品、按授权询价并准备图文，同时实施社媒注册、企业PayPal等适用收款申请、邮箱与独立站，交付教程、实际进度和直接开干表。"
