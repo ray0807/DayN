@@ -39,6 +39,29 @@ scripts/    安装与格式检查
 
 新电脑可让工具读取上述完整skill目录并按本机支持的方式安装，保留 `references/` 和 `agents/`。只把文件保存在 `days/` 不等于已安装；缺少询盘或图片工具时仍可研究和准备材料，不能假装已经调用。
 
+## 建站前与每周运营：关键词规划
+
+使用 [dataforseo-keyword-planner](skills/dataforseo-keyword-planner/SKILL.md)，输入产品或种子词，由 AI 分析并调用已连接的 DataForSEO MCP，交付可用于制作网站的报告。缺少目标市场、语言等必要信息时，每次最多补问三个问题。
+
+首次报告包含关键词数据与依据、网站页面结构、每页主次关键词、Title/H1及内容安排、内部链接与制作顺序。网站开始运营后，读取已发布页面台账和真实新增产品，生成每周文章、产品页及旧页优化关键词报告，避免重复争抢同一搜索意图。
+
+首次使用：
+
+```text
+使用 $dataforseo-keyword-planner。产品是【产品或关键词】，目标市场是【国家】，网站语言是【语言】。
+分析产品和客户搜索需求，调用已连接的 DataForSEO MCP，生成建站报告，告诉我做哪些页面、每页放什么词、具体怎么制作。
+```
+
+每周使用：
+
+```text
+使用 $dataforseo-keyword-planner，读取上次报告和已发布页面台账。
+本周新增产品是【实际产品；没有则填无】，可投入时间是【时间】。
+生成本周文章、产品页和旧页优化关键词报告，并更新台账。
+```
+
+需要先在使用工具中连接 DataForSEO MCP；安装 skill 不等于安装或连接 MCP。关键词月搜索量属于指定市场下的估计需求，不是网站实际流量；每周调用也不代表搜索量每周更新。本技能不默认创建定时任务或自动发布，账号密钥不得放入 skill、报告或仓库。
+
 ## Skills 分类
 
 | 类别 | Skill | 对应阶段 |
@@ -52,6 +75,7 @@ scripts/    安装与格式检查
 | 供应与样品 | [b2b-supplier-research](skills/b2b-supplier-research/SKILL.md) | 供应与样品需要时 |
 | 成本与报价 | [b2b-cost-quotation](skills/b2b-cost-quotation/SKILL.md) | 具体报价需求出现时 |
 | 产品展示 | [b2b-product-assets](skills/b2b-product-assets/SKILL.md) | Day 2及后续资料更新 |
+| 网站关键词 | [dataforseo-keyword-planner](skills/dataforseo-keyword-planner/SKILL.md) | 建站前的页面规划，以及每周文章、产品页与旧页优化 |
 | 客户积累 | [b2b-customer-development](skills/b2b-customer-development/SKILL.md) | 首轮实施及持续客户开发 |
 | 工具与自动化 | [b2b-lean-automation](skills/b2b-lean-automation/SKILL.md) | 启动工具及随时加入的自动化 |
 | 阶段复盘 | [b2b-progress-review](skills/b2b-progress-review/SKILL.md) | 持续实践中的定期复盘 |

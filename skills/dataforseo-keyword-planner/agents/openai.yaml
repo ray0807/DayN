@@ -1,0 +1,4 @@
+interface:
+  display_name: "DataForSEO 建站与每周关键词规划"
+  short_description: "输入产品，调用已连接的SEO数据生成页面关键词规划，并持续交付每周文章与产品页报告"
+  default_prompt: "使用 $dataforseo-keyword-planner，读取我的产品和网站记录，识别已连接DataForSEO MCP，研究关键词并生成建站页面报告；已有规划时给本周文章、产品页和旧页优化安排。"
